@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" >
+    <test name="Test1" >
+        <classes>
+            <class name="BaseTest"/>
+            <class name="TestNgTest"/>
+            <class name="com.second.example.demoThree"/>
+        </classes>
+    </test>
+    <test name="Test2" >
+        <classes>
+            <class name="com.first.example.demoOne"/>
+            <class name="com.first.example.demoTwo"/>
+            <class name="com.second.example.demoThree"/>
+        </classes>
+    </test>
+</suite>
