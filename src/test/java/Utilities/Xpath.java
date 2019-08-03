@@ -5,12 +5,11 @@ import org.openqa.selenium.By;
 public class Xpath {
 
     public interface  LoginPage{
-    public static By signIn=By.xpath("//span[contains (text(),'Hello, Sign in')]");
-    public static By email=By.xpath("//*[@id='ap_email']");
-    public static By login=By.xpath("//*[@id='ap_email']");
+    public static By password=By.xpath("//input[@name='pass']");
+    public static By userName=By.xpath("//input[@name='username']");
+    public static By login=By.xpath("//button[contains(text(),'Login')]");
     }
     public interface  HomePage{
-        public static By userName=By.xpath("//span[contains (text(),'Hello, Sign in')]");
-        public static By cart=By.xpath("//*[@id='ap_email']");
-    }
+        public static By logout=By.xpath("//button[contains(text(),'Log Out')]");
+     }
 }

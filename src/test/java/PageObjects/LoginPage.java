@@ -6,14 +6,14 @@ import Common.BasetTest;
 public class LoginPage extends BasetTest {
 
     public static void clickOnLogin(){
-        driver.findElement(signIn).click();
+        driver.findElement(login).click();
 
     }
-    public static void enterUserName(){
-        driver.findElement(email).click();
+    public static void enterUserName(String username){
+        driver.findElement(userName).sendKeys(username);
     }
-    public static void clickOnSignIn(){
-        driver.findElement(login).click();
+    public static void enterPassword(String pwd){
+        driver.findElement(password).sendKeys(pwd);
     }
 
 

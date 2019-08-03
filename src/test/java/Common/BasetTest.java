@@ -13,17 +13,17 @@ public static void openBrowser(){
     System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
     driver=new ChromeDriver();
     driver.manage().window().maximize();
+    driver.get("https://4cwebappdev.azurewebsites.net/jacob/url/webapptest.html");
 
 }
 
 @AfterMethod
     public static void closeBrowser(){
     takeScreenShot();
-    driver.close();
+    driver.quit();
     }
 
     public static void takeScreenShot(){
-
     }
 
 }
